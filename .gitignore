@@ -1,0 +1,28 @@
+/node_modules
+/laravel/public/assets/vendor
+
+# ignore grunt tasks output files
+/laravel/public/css/frontend.css
+/laravel/public/css/backend.css
+/laravel/public/js/frontend.js
+/laravel/public/js/frontend.min.js
+/laravel/public/js/backend.js
+/laravel/public/js/backend.min.js
+/laravel/public/js/sandbox.js
+/laravel/public/js/sandbox.min.js
+
+### Mac Related Ignores
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
