@@ -1,5 +1,5 @@
 # Installing Laravel and Bower dependencies
-npm install
+npm install --cache-min 999999
 bower install
 cd laravel
 composer update
