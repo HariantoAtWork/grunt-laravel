@@ -3,7 +3,9 @@
 
 # ignore grunt tasks output files
 /laravel/public/css/frontend.css
+/laravel/public/css/frontend.min.css
 /laravel/public/css/backend.css
+/laravel/public/css/backend.min.css
 /laravel/public/js/frontend.js
 /laravel/public/js/frontend.min.js
 /laravel/public/js/backend.js
