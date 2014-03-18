@@ -1,7 +1,10 @@
 # Installing Laravel and Bower dependencies
+ROOT_DIR=`pwd`
 npm install --cache-min 999999
 bower install
-cd laravel
+cd $ROOT_DIR/laravel
 composer update
 php artisan key:generate
-cd ..
+cd $ROOT_DIR/larave/public/assets/vendor/knockoutjs
+grunt clean checktrailingspaces build:debug test:phantomjs
+cd $ROOT_DIR
