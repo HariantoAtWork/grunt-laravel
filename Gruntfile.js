@@ -18,13 +18,24 @@ module.exports = function(grunt) {
     less: {
         development: {
             options: {
-              compress: true,  //minifying the result
+              compress: false,  //NOT minifying the result
             },
             files: {
               //compiling frontend.less into frontend.css
               "<%= paths.css %>frontend.css":"<%= paths.assets.css %>frontend.less",
               //compiling backend.less into backend.css
               "<%= paths.css %>backend.css":"<%= paths.assets.css %>backend.less"
+            }
+        },
+        production: {
+            options: {
+              compress: true,  //minifying the result
+            },
+            files: {
+              //compiling frontend.less into frontend.css
+              "<%= paths.css %>frontend.min.css":"<%= paths.assets.css %>frontend.less",
+              //compiling backend.less into backend.css
+              "<%= paths.css %>backend.min.css":"<%= paths.assets.css %>backend.less"
             }
         }
     },
