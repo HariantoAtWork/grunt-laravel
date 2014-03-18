@@ -61,12 +61,12 @@ module.exports = function(grunt) {
       },
       js_sandbox: {
         src: [
-          '<%= paths.assets.vendor %>jquery/jquery.js',
+          '<%= paths.assets.vendor %>jquery/dist/jquery.js',
           '<%= paths.assets.vendor %>bootstrap/dist/js/bootstrap.js',
-          '<%= paths.assets.vendor %>jquery-autosize/jquery-autosize.js',
+          '<%= paths.assets.vendor %>jquery-autosize/jquery.autosize.js',
           '<%= paths.assets.vendor %>jquery.lazyload/jquery.lazyload.js',
           '<%= paths.assets.vendor %>mixitup/src/jquery.mixitup.js',
-          '<%= paths.assets.vendor %>swipebox/source/jquery.swipebox.js',
+          '<%= paths.assets.vendor %>swipebox/src/jquery.swipebox.js',
           '<%= paths.assets.vendor %>nivo-slider/jquery.nivo.slider.js',
           '<%= paths.assets.vendor %>knockoutjs/build/output/knockout-latest.debug.js',
           '<%= paths.assets.vendor %>knockout-mapping/knockoutout.mapping.js'
