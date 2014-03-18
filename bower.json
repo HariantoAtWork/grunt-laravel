@@ -1,15 +1,15 @@
 {
   "name": "gruntRocks",
   "dependencies": {
-    "bootstrap": "~3.1.0",
-    "jquery-autosize": "~1.18.4",
-    "jquery.lazyload": "~1.9.3",
-    "mixitup": "~1.5.6",
-    "swipebox": "*",
-    "nivo-slider": "*",
-    "knockoutjs": "~3.0.0",
-    "knockout-mapping": "~2.4.1",
-    "less.js": "~1.6.3",
-    "font-awesome": "~4.0.3"
+    "bootstrap": null,
+    "jquery-autosize": null,
+    "jquery.lazyload": null,
+    "mixitup": null,
+    "swipebox": null,
+    "nivo-slider": null,
+    "knockoutjs": null,
+    "knockout-mapping": null,
+    "less.js": null,
+    "font-awesome": null
   }
 }
