@@ -150,6 +150,7 @@ Go to ./laravel directory and run the command in the terminal:
   <li>You may edit <strong>.gitignore</strong> since I&rsquo;ve exluded Grunts generated output files</li>
   <li>You may include <strong>frontend.css/min.js</strong>, <strong>backend.css/min.js</strong> or <strong>sandbox.min.js</strong> in your html</li>
   <li>You may change <strong>Gruntfile.js</strong> and look for <code>paths</code></li>
+  <li>You may change <strong>Gruntfile.js</strong> and look for <code>sandbox</code> paths, Bower dependencies may changed paths</li>
 </ul>
 
 
