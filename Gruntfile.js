@@ -45,7 +45,7 @@ module.exports = function(grunt) {
       },
       js_frontend: {
         src: [
-          '<%= paths.assets.vendor %>jquery/jquery.js',
+          '<%= paths.assets.vendor %>jquery/dist/jquery.js',
           '<%= paths.assets.vendor %>bootstrap/dist/js/bootstrap.js',
           '<%= paths.assets.js %>frontend.js'
         ],
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
       },
       js_backend: {
         src: [
-          '<%= paths.assets.vendor %>jquery/jquery.js',
+          '<%= paths.assets.vendor %>jquery/dist/jquery.js',
           '<%= paths.assets.vendor %>bootstrap/dist/js/bootstrap.js',
           '<%= paths.assets.js %>backend.js'
         ],
@@ -65,8 +65,9 @@ module.exports = function(grunt) {
           '<%= paths.assets.vendor %>bootstrap/dist/js/bootstrap.js',
           '<%= paths.assets.vendor %>jquery-autosize/jquery.autosize.js',
           '<%= paths.assets.vendor %>jquery.lazyload/jquery.lazyload.js',
+          '<%= paths.assets.vendor %>jquery.lazyload/jquery.scrollstop.js',
           '<%= paths.assets.vendor %>mixitup/src/jquery.mixitup.js',
-          '<%= paths.assets.vendor %>swipebox/src/jquery.swipebox.js',
+          '<%= paths.assets.vendor %>swipebox/src/js/jquery.swipebox.js',
           '<%= paths.assets.vendor %>nivo-slider/jquery.nivo.slider.js',
           '<%= paths.assets.vendor %>knockoutjs/build/output/knockout-latest.debug.js',
           '<%= paths.assets.vendor %>knockout-mapping/knockoutout.mapping.js'
@@ -105,10 +106,12 @@ module.exports = function(grunt) {
     },
 
     watch: {
+        grunt: { files: ['Gruntfile.js'] },
+        
         js_frontend: {
           files: [
             //watched files
-            '<%= paths.assets.vendor %>jquery/jquery.js',
+            '<%= paths.assets.vendor %>jquery/dist/jquery.js',
             '<%= paths.assets.vendor %>bootstrap/dist/js/bootstrap.js',
             '<%= paths.assets.js %>frontend.js'
             ],   
@@ -120,7 +123,7 @@ module.exports = function(grunt) {
         js_backend: {
           files: [
             //watched files
-            '<%= paths.assets.vendor %>jquery/jquery.js',
+            '<%= paths.assets.vendor %>jquery/dist/jquery.js',
             '<%= paths.assets.vendor %>bootstrap/dist/js/bootstrap.js',
             '<%= paths.assets.js %>backend.js'
           ],   
@@ -132,15 +135,15 @@ module.exports = function(grunt) {
         js_sandbox: {
           files: [
             //watched files
-            '<%= paths.assets.vendor %>jquery/jquery.js',
-            '<%= paths.assets.vendor %>bootstrap/dist/js/bootstrap.js',
-            '<%= paths.assets.vendor %>jquery-autosize/jquery-autosize.js',
-            '<%= paths.assets.vendor %>jquery.lazyload/jquery.lazyload.js',
-            '<%= paths.assets.vendor %>mixitup/src/jquery.mixitup.js',
-            '<%= paths.assets.vendor %>swipebox/source/jquery.swipebox.js',
-            '<%= paths.assets.vendor %>nivo-slider/jquery.nivo.slider.js',
-            '<%= paths.assets.vendor %>knockoutjs/build/output/knockout-latest.debug.js',
-            '<%= paths.assets.vendor %>knockout-mapping/knockoutout.mapping.js'
+            '<%= paths.assets.vendor %>**/jquery.js',
+            '<%= paths.assets.vendor %>**/bootstrap.js',
+            '<%= paths.assets.vendor %>**/jquery.autosize.js',
+            '<%= paths.assets.vendor %>**/jquery.lazyload.js',
+            '<%= paths.assets.vendor %>**/jquery.mixitup.js',
+            '<%= paths.assets.vendor %>**/jquery.swipebox.js',
+            '<%= paths.assets.vendor %>**/jquery.nivo.slider.js',
+            '<%= paths.assets.vendor %>**/knockout-latest.debug.js',
+            '<%= paths.assets.vendor %>**/knockoutout.mapping.js'
           ],   
           tasks: ['concat:js_sandbox','uglify:sandbox'],     //tasks to run
           options: {
